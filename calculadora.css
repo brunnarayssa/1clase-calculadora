@@ -75,9 +75,21 @@ button.operator:active {
 /* Footer */
 .footer {
     text-align: center;
+    margin-top: 20px; /* Espacio superior para el footer */
+    width: 100%; /* Asegúrate de que el footer ocupe todo el ancho */
+    position: relative; /* Posición relativa para el contenedor interno */
+}
+
+.footer-box {
+    background-color: white; /* Fondo blanco para el contenedor del footer */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .footer-logo {
@@ -91,4 +103,3 @@ button.operator:active {
     color: #333;
     margin-top: 5px; /* Espacio entre la imagen y el texto */
 }
-
