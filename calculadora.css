@@ -6,7 +6,7 @@ body {
     align-items: center; /* Centrar horizontalmente */
     height: 100vh; /* Altura total de la ventana */
     margin: 0;
-    background-color: #ffc0cb; /* Fondo de la página rosa */
+    background-color: #2977e3; /* Fondo de la página */
 }
 
 .calculator {
@@ -68,7 +68,7 @@ button.operator:active {
 
 .equal {
     grid-column: span 4;
-    background-color: #28a745;
+    background-color: #b5b6c6;
     color: white;
 }
 
