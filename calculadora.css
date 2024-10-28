@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Alinear en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Altura total de la ventana */
+    margin: 0;
+    background-color: #ffc0cb; /* Fondo de la página rosa */
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white; /* Fondo de la caja blanca */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre la calculadora y el footer */
+}
+
+.display {
+    width: 95%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botones de números */
+button.number {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+button.number:active {
+    background-color: #e0e0e0;
+}
+
+/* Botones de operaciones */
+button.operator {
+    background-color: #808080; /* Color gris para botones de operaciones */
+    color: white;
+}
+
+button.operator:active {
+    background-color: #606060; /* Color gris oscuro al presionar botones de operaciones */
+}
+
+.equal {
+    grid-column: span 4;
+    background-color: #28a745;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px; /* Tamaño de la imagen */
+    height: 50px;
+    border-radius: 50%; /* Redondear los bordes de la imagen */
+}
+
+.footer-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+}
+
